@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>データサイエンスの世界へようこそ！</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        li{
+            list-style:none;
+        }
+        :root {
+            --main-bg-color: #e6f3e6;
+            --main-text-color: #2c3e50;
+            --accent-color: #27ae60;
+            --light-accent-color: #2ecc71;
+        }
+        body {
+            background-color: var(--main-bg-color);
+        }
+        .reveal, .reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal li {
+            font-family: 'M PLUS Rounded 1c', sans-serif !important;
+            text-transform: none !important;
+            color: var(--main-text-color);
+        }
+        .reveal section img { background:none; border:none; box-shadow:none; }
+        .chart-container { width: 80%; margin: 0 auto; }
+        .data-icon { font-size: 2em; margin: 0.2em; }
+        .colorful-bg { 
+            background: linear-gradient(45deg, #27ae60, #2ecc71, #f1c40f);
+            color: white !important;
+        }
+        .custom-box { 
+            border-radius: 15px; 
+            padding: 20px; 
+            margin: 10px; 
+            color: white;
+            background-color: var(--accent-color);
+        }
+        code { background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px; }
+        .copy-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 5px 10px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .copy-button:hover {
+            background-color: var(--light-accent-color);
+        }
+        .emoji {
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+        .slide-number {
+            background-color: var(--accent-color) !important;
+        }
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 18px;
+            color: var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        #boxtext {
+            color: #FFF;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="colorful-bg">
+                <h1>データサイエンスの世界へようこそ！🌍📊</h1>
+                <p>身の回りのデータから新しい発見をしよう</p>
+                <div>
+                    <i class="fas fa-database data-icon"></i>
+                    <i class="fas fa-chart-bar data-icon"></i>
+                    <i class="fas fa-lightbulb data-icon"></i>
+                </div>
+            </section>
+
+            <section>
+                <h2>講師紹介</h2>
+                <ul>
+                    <li>講師名：ニャンタ先生</li><img src="素材/0002.png" align="right">
+                    <br>
+                    <li>高校の先生として12年間勤めていました（専門：情報）</li>
+                    <li>今は情報Iの塾講師、オンライン個別指導の講師を行っています!🐱</li>
+                </ul>
+                <p>わからないこと、<br>疑問等ありましたら質問してください！</p>
+            </section>
+
+
+            <section>
+                <h2>「情報I」とデータ分析 📚</h2>
+                <ul>
+                    <li>高校では「情報I」でデータ分析を学びます 🏫</li>
+                    <li>2024年1月、初めて大学入学共通テストで情報の試験が実施されます 🎓</li>
+                    <li>この講座では、「情報I」に関連した内容になっています 🔍</li>
+                </ul>
+                <p class="fragment">👉データ分析スキルは、将来の学習や仕事に役立ちます！💼</p>
+            </section>
+
+            <section>
+                <h2>データサイエンスってなんだろう？🤔</h2>
+                <div class="r-stack">
+                </div>
+                <p class="fragment" data-fragment-index="1">データを収集・分析・解釈して、問題解決や意思決定に役立てる学問です 💡</p>
+            </section>
+
+            <section data-auto-animate>
+                <h2>データサイエンスでできること 🛠️</h2>
+                <div class="r-hstack justify-center">
+                    <div class="custom-box" data-id="box1">
+                        <i class="fas fa-briefcase" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="custom-box" data-id="box2">
+                        <i class="fas fa-heartbeat" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="custom-box" data-id="box3">
+                        <i class="fas fa-futbol" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="custom-box" data-id="box4">
+                        <i class="fas fa-tree" style="font-size: 50px;"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h2>データサイエンスでできること 🛠️</h2>
+                <div class="r-stack">
+                    <div class="custom-box" data-id="box1" style="width: 300px; height: 300px;">
+                        <i class="fas fa-briefcase" style="font-size: 80px;"></i>
+                        <p id="boxtext" style="margin-top: 20px;">ビジネス：売上予測、顧客分析 📈</p>
+                    </div>
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h2>データサイエンスでできること 🛠️</h2>
+                <div class="r-stack">
+                    <div class="custom-box" data-id="box2" style="width: 300px; height: 300px;">
+                        <i class="fas fa-heartbeat" style="font-size: 80px;"></i>
+                        <p id="boxtext" style="margin-top: 20px;">医療：病気診断、新薬開発 🏥</p>
+                    </div>
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h2>データサイエンスでできること 🛠️</h2>
+                <div class="r-stack">
+                    <div class="custom-box" data-id="box3" style="width: 300px; height: 300px;">
+                        <i class="fas fa-futbol" style="font-size: 80px;"></i>
+                        <p id="boxtext" style="margin-top: 20px;">スポーツ：選手分析、戦術策定 ⚽</p>
+                    </div>
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h2>データサイエンスでできること 🛠️</h2>
+                <div class="r-stack">
+                    <div class="custom-box" data-id="box4" style="width: 300px; height: 300px;">
+                        <i class="fas fa-tree" style="font-size: 80px;"></i>
+                        <p id="boxtext" style="margin-top: 20px;">環境：環境問題分析、対策立案 🌳</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>身近なデータサイエンス 🏠</h2>
+                <div class="r-stack">
+                    <img src="素材/0001.jpeg" alt="身近なデータサイエンス例" class="fragment fade-out" data-fragment-index="0" width="50%">
+                    <ul class="fragment fade-in" data-fragment-index="0">
+                        <li>YouTubeのおすすめ動画 🎥</li>
+                        <li>Amazonの商品レコメンド 🛒</li>
+                        <li>スマホの顔認証 📱</li>
+                        <li>天気予報🌤</li>
+                    </ul>
+                </div>
+                <p class="fragment">私たちは毎日データサイエンスの恩恵を受けています！😊</p>
+            </section>
+
+            <section>
+                <h3>データ分析の例：学校アンケート 📝</h3>
+                <div class="chart-container">
+                    <img src="素材/0003.png" alt="学校アンケート結果グラフ" width="70%">
+                </div>
+                <p class="fragment">アンケート結果を分析することで、<br>意見や傾向を把握できます 👥</p>
+            </section>
+
+            <section>
+                <h3>オープンデータを使ってみよう！🌐</h3>
+                <p>オープンデータとは・・・<br>誰でも自由に利用できるデータのこと</p>
+                <ul>
+                    <li><a href="https://www.jma.go.jp/jma/index.html" target="_blank">気象庁HP🌤</a></li>
+                    <li><a href="https://www.e-stat.go.jp/" target="_blank">政府統計ポータルサイト（e-Stat）📊</a></li>
+                    <li><a href="https://resas-portal.go.jp/" target="_blank">RESAS（地域経済分析システム）🏙️</a></li>
+                </ul>
+                <p>興味のあるデータを探してみましょう！🔍</p>
+            </section>
+
+            <section>
+                <h2>データのアクセス方法 📊</h2>
+                <ol>
+                    <li>Webサイトにアクセス（e-Stat, RESASなど）💻</li>
+                    <li>興味のあるデータセットを探す 🕵️</li>
+                    <li>データのダウンロード方法を確認 ⬇️</li>
+                    <li>CSVやExcelファイルとしてダウンロード 📁</li>
+                </ol>
+                <p>多くの場合、CSVファイルでデータが提供されています 📄</p>
+            </section>
+            <section>
+                <h2>本講座で使用するデータ</h2>
+                <p><a href="https://drive.google.com/drive/folders/1GwBEYNiFsp3wC4QTEi2X9l03iaAqD8mb?usp=drive_link" target="_blank">GoogleDrive</a>にすべて保存しています。今回は「<b>Day1データ</b>」を使用します</p>
+                <p>ダウンロードしましょう!🐱</p>
+                <p><b>わからないこと、<br>疑問等ありましたら質問してください！</b></p>
+            </section>
+
+            <section>
+                <h2>基本的なExcel関数（1）🧮</h2>
+                <ul>
+                    <li><code>SUM()</code>: 合計を計算 ➕</li>
+                    <li><code>AVERAGE()</code>: 平均を計算 📊</li>
+                    <li><code>COUNT()</code>: データの数を数える 🔢</li>
+                    <li><code>MAX()</code>: 最大値を見つける ⬆️</li>
+                    <li><code>MIN()</code>: 最小値を見つける ⬇️</li>
+                </ul>
+                <p class="fragment">データの基本的な特徴を把握できます 📈</p>
+                <p align="right">👉シートで練習「基礎演習１」</p>
+            </section>
+            <section>
+                <h2>基本的なExcel関数（2）🧮</h2><br>
+                <p>データの中で最も頻繁に現れる値</p>
+                <p>例：{2, 3, 3, 4, 5, 3, 6} の最頻値は 3</p>
+                <p>注意：最頻値が複数ある場合もあります</p>
+                
+                <p>Excelでの計算：</p>
+                <pre><code>=MODE.SNGL(A1:A7)</code></pre>
+                <p align="right">👉シートで練習「基礎演習２」</p>
+                </section>
+
+            <section>
+                <h2>基本的なExcel関数（3）🧮</h2>
+                <ul>
+                    <li><code>IF()</code>: 条件分岐 🔀</li>
+                    <li><code><a href="https://support.microsoft.com/ja-jp/office/vlookup-%E9%96%A2%E6%95%B0-0bbc8083-26fe-4963-8ab8-93a18ad188a1" target="_blank">VLOOKUP()</a></code>: 縦方向の検索 🔍</li>
+                    <li><code>CONCATENATE()</code>: 文字列の結合 🔗</li>
+                    <li><code>LEFT()</code>, <code>RIGHT()</code>, <code>MID()</code>: 文字列の抽出</li>
+                </ul>
+                <p class="fragment">これらの関数を組み合わせることで、より複雑な分析も可能になります </p>
+                <p align="right">👉シートで練習「基礎演習３」</p>
+            </section>
+
+            <section>
+                <h2>WEBSERVICE関数の使い方 🌐</h2>
+                <p><code>WEBSERVICE</code>関数を使うと、WebサービスのデータをExcelに直接取り込めます</p>
+                <pre><code>
+=WEBSERVICE("https://api.example.com/data")
+                </code></pre>
+                <p class="fragment">注意：セキュリティ設定によっては、この機能が制限されている場合があります 🔒</p>
+                <p align="right">👉シートで練習「基礎演習４」</p>
+            </section>
+
+            <section>
+                <h2>WEBSERVICE関数の例：天気データ取得 ☀️</h2>
+                <p>OpenWeatherMap APIを使って天気データを取得する例：</p>
+                <pre><code>
+=WEBSERVICE("https://api.openweathermap.org/data/2.5/forecast?q=Tokyo&appid=f53a4fac44af40b32465203aab2cb37e&units=metric")
+</code></pre>
+<p class="fragment">このAPIを使って、東京の1週間の天気予報データを取得できます 🗼🌤️</p>
+</section>
+
+<section>
+<h2>データ分析の流れ</h2>
+<ol>
+    <li>1️⃣　データの取得 📥</li>
+    <li>2️⃣　データの整形（使いやすくする） 🧹</li>
+    <li>3️⃣　データの分析 🔬</li>
+    <li>4️⃣　結果の可視化 📊</li>
+    <li>5⃣　考察 💡</li>
+</ol>
+<p class="fragment">この流れを意識しながら、実際にデータを分析してみましょう！</p>
+</section>
+<section>
+    <h2>Excelへのデータ取り込み方 📥</h2>
+    <ol>
+        <li>1️⃣　Excelを開く 📊</li>
+        <li>2️⃣　データ（CSVデータなど）を開く</li>
+        <li>3️⃣　2️⃣のデータをコピー</li>
+        <li>4️⃣　エクセルシートに貼り付け</li>
+    </ol>
+</section>
+
+<section>
+    <h2>応用演習1：CSVデータ取り込み 📥</h2>
+    <ol>
+        <li>1️⃣　CSVデータのダウンロード</li>
+        <li>2️⃣　CSVデータを開く</li>
+        <li>3️⃣　データをコピー</li>
+        <li>4️⃣　エクセルシートに貼り付け</li>
+        <li>5⃣　「区切り位置」でデータを整形する</li>
+    </ol>
+</section>
+
+
+<section>
+    <h2>ミッションDay1</h2>
+    <p>気象庁のオープンデータを使って、<br>以下の分析を行ってみましょう！</p>
+    <ul><b>
+        <li>特定地域の月ごとの平均気温の推移 🌡️</li>
+        <li>降水量の変化 ☔</li>
+        <li>季節ごとの気温変動 🍃🍁</li></b>
+        <p align="right">👉シートで練習「ミッション」</p>
+    </ul>
+    </section>
+
+<section>
+<h2>データのクリーニング 🧹</h2>
+<p>実際のデータは完璧ではありません。以下の作業が必要です：</p>
+<ul>
+    <li>欠損値の処理（削除or補完）❓</li>
+    <li>異常値の検出と処理 ⚠️</li>
+    <li>データ形式の統一 🔄</li>
+    <li>重複データの削除 🗑️</li>
+</ul>
+<p class="fragment">クリーンなデータが正確な分析の鍵です 🔑</p>
+</section>
+
+
+
+<section>
+<h2>まとめ 🎓</h2>
+<ul>
+    <li>データサイエンスの基本概念</li>
+    <li>Excelを使ったデータ分析の基礎を習得 📊</li>
+    <li>実際のデータを使って分析を体験 🔬</li>
+    <li>データの代表値とその特徴を理解 📏</li>
+</ul>
+<p class="fragment">これからも身の回りのデータに注目し、分析する習慣をつけましょう！🕵️‍♀️🔍</p>
+</section>
+
+<section>
+<h2>質問タイム</h2>
+<p>ここまでの内容で、分からないことや興味を持ったことはありますか？</p>
+<p class="fragment">質問することも、重要なスキルです！🙋‍♀️🙋‍♂️</p>
+</section>
+
+
+
+
+<!-- 2日目 -->
+<section>
+    <h2>2日目</h2>
+</section>
+<section>
+    <h2>本講座で使用するデータ</h2>
+    <p><a href="https://drive.google.com/drive/folders/1GwBEYNiFsp3wC4QTEi2X9l03iaAqD8mb?usp=drive_link" target="_blank">GoogleDrive</a>にすべて保存しています。今回は「<b>Day2データ</b>」を使用します</p>
+    <p>ダウンロードしましょう!🐱</p>
+    <p><b>わからないこと、<br>疑問等ありましたら質問してください！</b></p>
+</section>
+<section>
+    <h2>データ分析の応用: 予測モデル</h2>
+    <p>Excelの分析ツールを使って、簡単な予測モデルを作ってみましょう</p>
+    <ul>
+        <li>相関係数と散布図📈</li>
+    </ul>
+</section>
+<section>
+    <h2>相関係数とは？</h2>
+    <p>ここにテキストを入力</p>
+    <ul>
+        <li>ここにテキストを入力</li>
+    </ul>
+</section>
+<section>
+<h2>応用演習1: アイスクリームの支出額を調べる</h2>
+<p>以下の演習を行ってみましょう：</p>
+<ol>
+    <li>散布図を作成し、データの傾向を調べる 📈</li>
+    <li>相関係数を用いてで２つの要素間の関係をしらべる 📉</li>
+    <p align="right">👉ファイル名「Day2」　シート：応用演習１</p>
+</ol>
+</section>
+<section>
+<h2>応用演習2: 気象データ ☀️🌧️</h2>
+<p>気象庁のオープンデータを使って、<br>以下の分析を行ってみましょう（１日目のつづき）</p>
+<ul>
+    <li>平均気温の平均湿度の関係<br>（<b>散布図＆相関係数</b>を使います！） ☔</li>
+    <p align="right">👉ファイル名「Day2」　シート：応用演習２</p>
+</ul>
+</section>
+<section>
+    <h2>ミッションDay2</h2>
+    <p>テーマを１つ決めて分析してみよう！！</p>
+    <ul>
+        <li><b>テーマを決める</b><br><right>例）地域、気象、スポーツ</right></li>
+        <li><b>エクセルでまとめます👉「ミッション」</b></li>
+        <li><b>グラフにしてわかりやすくまとめる</b></li>
+        <li><b>１人３分以内で発表会します！</b>（３×５分＝15分）</li>
+
+    </ul>
+</section>
+<section>
+    <h2>ふりかえり</h2>
+    <p>ここにテキストを入力</p>
+    <ul>
+        <li>ここにテキストを入力</li>
+        <li>ここにテキストを入力</li>
+
+    </ul>
+</section>
+
+
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+<script>
+Reveal.initialize({
+hash: true,
+transition: 'slide',
+backgroundTransition: 'fade',
+autoAnimateDuration: 1,
+autoAnimateEasing: 'ease-out',
+slideNumber: 'c/t',
+});
+// ページ番号のカスタマイズ
+function createPageNumber() {
+            let totalSlides = Reveal.getTotalSlides();
+            let currentSlide = Reveal.getSlidePastCount() + 1;
+            let pageNumber = document.createElement('div');
+            pageNumber.className = 'page-number';
+            pageNumber.textContent = currentSlide + ' / ' + totalSlides;
+            document.querySelector('.reveal').appendChild(pageNumber);
+        }
+
+        function updatePageNumber() {
+            let pageNumber = document.querySelector('.page-number');
+            let totalSlides = Reveal.getTotalSlides();
+            let currentSlide = Reveal.getSlidePastCount() + 1;
+            pageNumber.textContent = currentSlide + ' / ' + totalSlides;
+        }
+
+        // Reveal.addEventListener('ready', createPageNumber);
+        Reveal.addEventListener('slidechanged', updatePageNumber);
+
+
+// コードブロックにコピーボタンを追加
+document.querySelectorAll('pre code').forEach((block) => {
+const button = document.createElement('button');
+button.className = 'copy-button';
+button.textContent = 'コピー';
+button.addEventListener('click', () => {
+navigator.clipboard.writeText(block.textContent).then(() => {
+    button.textContent = 'コピーしました！';
+    setTimeout(() => {
+        button.textContent = 'コピー';
+    }, 2000);
+});
+});
+block.parentNode.insertBefore(button, block);
+});
+</script>
+</body>
+</html>
